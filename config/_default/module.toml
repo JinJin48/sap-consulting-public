@@ -1,0 +1,96 @@
+# Project-level module mounts — overrides theme defaults.
+# Excludes themes/doks/content (theme's example content: blog, guides, contributors)
+# to keep our site content-only. The npm-based @thulite/* mounts are kept
+# as-is by referencing node_modules at the project root.
+
+## content — only our project's content/ directory
+[[mounts]]
+  source = "content"
+  target = "content"
+
+## data
+[[mounts]]
+  source = "node_modules/@thulite/doks-core/data"
+  target = "data"
+
+[[mounts]]
+  source = "data"
+  target = "data"
+
+## layouts
+[[mounts]]
+  source = "layouts"
+  target = "layouts"
+
+[[mounts]]
+  files = ['! home.html']
+  source = "node_modules/@thulite/doks-core/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/core/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/seo/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/images/layouts"
+  target = "layouts"
+
+[[mounts]]
+  source = "node_modules/@thulite/inline-svg/layouts"
+  target = "layouts"
+
+## i18n
+[[mounts]]
+  source = "node_modules/@thulite/doks-core/i18n"
+  target = "i18n"
+
+[[mounts]]
+  source = "i18n"
+  target = "i18n"
+
+## archetypes
+[[mounts]]
+  source = "node_modules/@thulite/doks-core/archetypes"
+  target = "archetypes"
+
+[[mounts]]
+  source = "archetypes"
+  target = "archetypes"
+
+## assets
+[[mounts]]
+  source = "node_modules/@thulite/core/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@thulite/doks-core/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "node_modules/@tabler/icons/icons"
+  target = "assets/svgs/tabler-icons"
+
+[[mounts]]
+  source = "node_modules/@thulite/images/assets"
+  target = "assets"
+
+[[mounts]]
+  source = "hugo_stats.json"
+  target = "assets/watching/hugo_stats.json"
+
+[[mounts]]
+  source = "assets"
+  target = "assets"
+
+## static — theme's doks-core static (favicons, fonts) + our project static
+[[mounts]]
+  source = "node_modules/@thulite/doks-core/static"
+  target = "static"
+
+[[mounts]]
+  source = "static"
+  target = "static"

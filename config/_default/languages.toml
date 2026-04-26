@@ -1,0 +1,11 @@
+[ja]
+  languageName = "日本語"
+  contentDir = "content"
+  weight = 1
+  [ja.params]
+    languageISO = "JA"
+    languageTag = "ja-JP"
+    titleAddition = "SAPコンサルティングナレッジ"
+    description = "USにロールアウトする日本企業向け SAP コンサルティングナレッジ — BTP / AI Trends / Global Trends"
+    titleHome = "SAP Consulting Knowledge"
+    footer = '© 2026 <a class="text-muted" href="https://github.com/JinJin48">JinJin48</a> — CC BY-SA 4.0'

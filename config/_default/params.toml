@@ -1,0 +1,120 @@
+# Project-level params — merged with theme params.toml
+title = "SAP Consulting Knowledge"
+description = "USにロールアウトする日本企業向け SAP コンサルティングナレッジ — BTP / AI Trends / Global Trends"
+images = []
+
+# Top-level sections that act as content roots
+mainSections = ["docs"]
+
+math = false
+
+[social]
+  # No social handles configured
+
+# Doks (@thulite/doks-core) overrides
+[doks]
+  # Color mode — default light, allow toggle
+  colorMode = "light"
+  colorModeToggler = true
+
+  # Navbar
+  navbarSticky = true
+  containerBreakpoint = "fluid"
+
+  navBarButton = false
+
+  # Search
+  flexSearch = true
+  searchExclKinds = []
+  searchExclTypes = []
+  showSearch = []
+  indexSummary = false
+
+  showDate = false
+  showSummary = true
+  searchLimit = 99
+
+  alert = false
+  alertDismissable = true
+
+  bootstrapJavascript = false
+
+  sectionSwitcher = false
+  sectionNav = ["docs"]
+  toTopButton = true
+  breadcrumbTrail = true
+  headlineHash = true
+  scrollSpy = true
+
+  multilingualMode = false
+  showMissingLanguages = false
+
+  docsVersioning = false
+  docsVersion = "1.0"
+
+  headerBar = false
+  backgroundDots = false
+  aiButtons = true
+
+  sectionFooter = false
+
+  relatedPosts = false
+  imageList = true
+  imageSingle = true
+
+  editPage = false
+  lastMod = true
+  repoHost = "GitHub"
+  docsRepo = "https://github.com/JinJin48/sap-consulting-public"
+  docsRepoBranch = "main"
+  docsRepoSubPath = ""
+
+  krokiURL = "https://kroki.io"
+
+  # SCSS theme colors — light mode (blue-based, mockup_reference準拠)
+  textLight = "#1A2332"
+  accentLight = "#185FA5"
+  ## Dark theme — keep Doks defaults
+
+# Render hooks
+[render_hooks.image]
+  errorLevel = 'ignore'
+
+[render_hooks.link]
+  errorLevel = 'ignore'
+  highlightBroken = false
+
+[thulite_images]
+  [thulite_images.defaults]
+    decoding = "async"
+    fetchpriority = "auto"
+    loading = "lazy"
+    widths = [480, 576, 768, 1025, 1200, 1440]
+    sizes = "auto"
+    process = ""
+    lqip = "16x webp q20"
+
+[inline_svg]
+  iconSetDir = "tabler-icons"
+  iconSetVariant = "outline"
+
+# SEO (@thulite/seo) — built-in schema markup, OGP, Twitter Card
+[seo]
+  [seo.title]
+    separator = "|"
+    suffix = ""
+  [seo.description]
+    summaryFallback = ""
+  [seo.favicons]
+    icon = "favicon.png"
+    svgIcon = "favicon.svg"
+  [seo.schemas]
+    type = "Person"
+    logo = "favicon-512x512.png"
+    name = "JinJin48"
+    sameAs = ["https://github.com/JinJin48"]
+    images = ["cover.png"]
+    article = ["docs"]
+    newsArticle = []
+    blogPosting = []
+    product = []

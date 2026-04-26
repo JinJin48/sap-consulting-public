@@ -28,3 +28,17 @@ Gemfile.lock
 *.tmp
 *.bak
 *.log
+
+# Claude (Skills, settings - local only)
+.claude/
+
+# Hugo (build artifacts)
+public/
+resources/
+.hugo_build.lock
+node_modules/
+hugo_stats.json
+assets/jsconfig.json
+
+# Hugo modules / theme
+themes/doks/.git/

@@ -1,0 +1,49 @@
+# Project-level Hugo config — overrides theme defaults in themes/doks/config/_default/
+title = "SAP Consulting Knowledge"
+baseURL = "https://jinjin48.github.io/sap-consulting-public/"
+theme = "doks"
+
+languageCode = "ja"
+defaultContentLanguage = "ja"
+hasCJKLanguage = true
+summaryLength = 30
+
+# Disable languages shipped with Doks (en/de/nl) — we override with ja-only via languages.toml
+disableLanguages = ["en", "de", "nl"]
+defaultContentLanguageInSubdir = false
+
+enableRobotsTXT = true
+enableEmoji = true
+enableGitInfo = true
+
+# Disable taxonomy/term pages (Doks term.html expects contributor data we don't have)
+disableKinds = ["taxonomy", "term"]
+
+# Output formats for home / page / section (mirrors Doks default with explicit redeclaration)
+[outputs]
+  home = ["html", "rss", "sitemap", "searchIndex", "llms"]
+  page = ["html"]
+  section = ["html", "rss"]
+
+[outputFormats.searchIndex]
+  mediaType = "application/json"
+  baseName = "search-index"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName = "llms"
+  isHTML = false
+  isPlainText = true
+
+copyRight = "© 2026 JinJin48 — Licensed under CC BY-SA 4.0"
+
+# Permalinks (override theme default which uses /docs/:sections[1:]/:slug/)
+[permalinks]
+  docs = "/docs/:sections[1:]/:slug/"
+
+[sitemap]
+  changefreq = "weekly"
+  filename = "sitemap.xml"
+  priority = 0.5
