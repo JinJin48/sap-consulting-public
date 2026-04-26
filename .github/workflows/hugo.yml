@@ -51,7 +51,19 @@ jobs:
       - name: Install npm dependencies (project root)
         run: npm ci --no-audit --no-fund
 
-      - name: Build with Hugo
+      - name: Pre-warm hugo_stats.json (themes/doks)
+        run: |
+          mkdir -p themes/doks
+          echo '{"htmlElements":{"tags":[],"classes":[],"ids":[]}}' > themes/doks/hugo_stats.json
+          echo '{"htmlElements":{"tags":[],"classes":[],"ids":[]}}' > hugo_stats.json
+
+      - name: Build with Hugo (1st pass — generate hugo_stats.json)
+        env:
+          HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
+          HUGO_ENVIRONMENT: development
+        run: hugo --gc --baseURL "${{ steps.pages.outputs.base_url }}/" || true
+
+      - name: Build with Hugo (2nd pass — production)
         env:
           HUGO_CACHEDIR: ${{ runner.temp }}/hugo_cache
           HUGO_ENVIRONMENT: production
