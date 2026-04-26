@@ -47,3 +47,11 @@ copyRight = "© 2026 JinJin48 — Licensed under CC BY-SA 4.0"
   changefreq = "weekly"
   filename = "sitemap.xml"
   priority = 0.5
+
+# Build settings — required for PurgeCSS to work correctly in production
+# writeStats=true makes Hugo emit hugo_stats.json with all classes/tags/ids used
+[build]
+  writeStats = true
+  noJSConfigInAssets = false
+  useResourceCacheWhen = "fallback"
+
