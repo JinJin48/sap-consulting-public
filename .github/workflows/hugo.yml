@@ -45,12 +45,11 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '24'
+          node-version: '24.13'
+          cache: 'npm'
 
-      - name: Install Doks theme dependencies (npm)
-        run: |
-          cd themes/doks
-          npm ci --no-audit --no-fund
+      - name: Install npm dependencies (project root)
+        run: npm ci --no-audit --no-fund
 
       - name: Build with Hugo
         env:
