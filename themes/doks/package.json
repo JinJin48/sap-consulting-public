@@ -4,6 +4,7 @@
   "description": "Doks theme",
   "author": "Thulite",
   "license": "MIT",
+  "type": "module",
   "repository": {
     "type": "git",
     "url": "https://github.com/thuliteio/doks.git"
