@@ -24,7 +24,7 @@ type: "docs"
 
 ![SAP BTP: A 7-Layer Blueprint for the Clean Core — Functional Pillars (App Dev & Automation, Integration & Data, Embedded AI), Strategic Foundation & Operations](images/00-cover-infographic.png)
 
-## 1. Target Readers
+## 1) Target Readers
 
 | Reader | What You Will Get |
 |---|---|
@@ -36,27 +36,27 @@ Each section is tagged with **🎯 [Audience]**. Skip to what is relevant for yo
 
 ---
 
-## 2. Where This Article Sits in the Big Picture
+## 2) Where This Article Sits in the Big Picture
 
 BTP can be organized in 7 layers. This article covers the **Big Picture (📍)**.
 
-The Domain column below is numbered to match the section structure of this article — when you see `5-1. Application Development`, that section drills into Layer 1.
+The Domain column below is numbered to match the section structure of this article — when you see `5-1) Application Development`, that section drills into Layer 1.
 
 | Layer Type | Domain | Key Services | This Article |
 |---|---|---|---|
-| Functional | **5-1. Application Development** | Build Apps / BAS / Cloud Foundry / Kyma / ABAP | — |
-| Functional | **5-2. Automation** | Build Process Automation / Task Center | — |
-| Functional | **5-3. Integration** | Integration Suite / Event Mesh / API Mgmt | — |
-| Functional | **5-4. Data and Analytics** | HANA Cloud / Datasphere / SAC / MDG | — |
-| Functional | **5-5. AI** | AI Core / Joule / GenAI Hub | — |
-| Foundation | **5-6. Foundation Services** | IAS / IPS / XSUAA / Cloud Connector | — |
+| Functional | **5-1) Application Development** | Build Apps / BAS / Cloud Foundry / Kyma / ABAP | — |
+| Functional | **5-2) Automation** | Build Process Automation / Task Center | — |
+| Functional | **5-3) Integration** | Integration Suite / Event Mesh / API Mgmt | — |
+| Functional | **5-4) Data and Analytics** | HANA Cloud / Datasphere / SAC / MDG | — |
+| Functional | **5-5) AI** | AI Core / Joule / GenAI Hub | — |
+| Foundation | **5-6) Foundation Services** | IAS / IPS / XSUAA / Cloud Connector | — |
 | Cross-cutting | **Big Picture / Architecture & Ops / Use Cases** | Landscape / CI-CD / Security / Use Cases | 📍 |
 
 Each service is detailed in dedicated articles (see "What to Read Next" at the end).
 
 ---
 
-## 3. What is SAP BTP?
+## 3) What is SAP BTP?
 
 🎯 **For: All readers**
 
@@ -78,7 +78,7 @@ In one sentence: it is **the foundation for extending, integrating, analyzing, a
 
 ---
 
-## 4. Why BTP Matters Now: The Clean Core Strategy
+## 4) Why BTP Matters Now: The Clean Core Strategy
 
 🎯 **For: Executives & DX Leaders**
 
@@ -98,7 +98,7 @@ S/4HANA's release cycle is shorter than the legacy ERP's, making **"how to meet 
 
 ---
 
-## 5. The 7 Layers of SAP BTP
+## 5) The 7 Layers of SAP BTP
 
 🎯 **For: IT Leads & Consultants**
 
@@ -106,7 +106,7 @@ Aligned with SAP Help Portal, BTP can be understood through these 7 layers. Laye
 
 ![The Master Capability Map: 7 Layers of Architecture — Functional Pillars (1-5), Foundation (6), and Cross-Cutting Architecture & Operations (7)](images/04-master-capability-map-7-layers.png)
 
-### 5-1. Application Development
+### 5-1) Application Development
 
 The domain for building SAP and custom applications.
 
@@ -121,7 +121,7 @@ The domain for building SAP and custom applications.
 
 ![Layer 1: Application Development Spectrum — from Low-Code/No-Code (Build Apps) to Pro-Code (BAS) to Runtimes (Cloud Foundry, Kyma, ABAP), unified by DevOps](images/05-layer1-app-development-spectrum.png)
 
-### 5-2. Automation
+### 5-2) Automation
 
 The domain for automating business processes.
 
@@ -134,7 +134,7 @@ The domain for automating business processes.
 
 ![Layer 2: Automating the Human Loop — from manual bottlenecks (data entry, email approvals, disconnected systems) to an automated pipeline via SAP Build Process Automation and SAP Task Center](images/06-layer2-automating-human-loop.png)
 
-### 5-3. Integration
+### 5-3) Integration
 
 The domain for connecting SAP and external systems (SaaS, on-premise, custom apps).
 
@@ -149,7 +149,7 @@ The Integration Suite ships with over 3,400 pre-built iFlows and 170+ third-part
 
 ![Layer 3: The Central Nervous System for Integration — SAP Integration Suite connecting SAP Systems, Third-Party SaaS, and On-Premise Legacy Apps with 3,400+ pre-built iFlows](images/07-layer3-central-nervous-system.png)
 
-### 5-4. Data and Analytics
+### 5-4) Data and Analytics
 
 The domain for data management, analytics, and planning.
 
@@ -164,7 +164,7 @@ The domain for data management, analytics, and planning.
 
 ![Layer 4: Distilling Raw Data into Business Intelligence — the data refinery from HANA Cloud (input) through Datasphere (filter), governed by MDG (valve), into SAP Analytics Cloud (output)](images/08-layer4-distilling-data.png)
 
-### 5-5. AI
+### 5-5) AI
 
 The domain for embedding AI into SAP business processes.
 
@@ -181,7 +181,7 @@ As of 2026, Joule is integrated into S/4HANA, SuccessFactors, Ariba, and other m
 
 ![Layer 5: Embedding AI into the Business Process — Joule (the embedded AI assistant) sits on top of SAP AI Core & Launchpad and the Generative AI Hub (GPT, Claude, Gemini)](images/09-layer5-embedding-ai.png)
 
-### 5-6. Foundation Services
+### 5-6) Foundation Services
 
 🎯 **For: Infrastructure & Security Teams**
 
@@ -200,7 +200,7 @@ The shared foundation supporting layers 1 through 5.
 
 ![Layer 6: The Security and Infrastructure Bedrock — Zone 1: Identity & Access (IAS, IPS, XSUAA, Audit Log) and Zone 2: Connectivity & Ops (Cloud Connector, Cloud ALM)](images/10-layer6-security-bedrock.png)
 
-### 5-7. Architecture & Operations Knowledge
+### 5-7) Architecture & Operations Knowledge
 
 🎯 **For: Architects & Operations Teams**
 
@@ -220,7 +220,7 @@ These are scattered across SAP's official documentation, which is why this site 
 
 ---
 
-## 6. Licensing Models and Getting Started
+## 6) Licensing Models and Getting Started
 
 🎯 **For: Executives & Procurement**
 
@@ -241,7 +241,7 @@ BTP offers several contract models. The right one depends on **when, who, and ho
 
 ---
 
-## 7. Common Misconceptions
+## 7) Common Misconceptions
 
 🎯 **For: All readers**
 
@@ -258,7 +258,7 @@ These misconceptions surface in real projects all the time. Each is addressed in
 
 ---
 
-## 8. What to Read Next
+## 8) What to Read Next
 
 This site organizes BTP knowledge into the following structure:
 
@@ -276,7 +276,7 @@ This site organizes BTP knowledge into the following structure:
 
 ---
 
-## 9. Summary
+## 9) Summary
 
 - **BTP is SAP's unified cloud platform for extending, integrating, analyzing, automating, and adding AI to SAP products.**
 - The structure is **five functional pillars (App Dev, Automation, Integration, Data & Analytics, AI) plus Foundation Services and Architecture & Operations knowledge** — seven layers in total.
@@ -287,7 +287,7 @@ Each service is detailed in the L2-A through L2-G series.
 
 ---
 
-## 10. FAQ
+## 10) FAQ
 
 ### Q1. Can companies without S/4HANA still use BTP?
 
@@ -309,7 +309,7 @@ A: The official [SAP Learning](https://learning.sap.com/learning-journeys/discov
 
 ---
 
-## 11. References
+## 11) References
 
 - [SAP Help Portal: SAP Business Technology Platform](https://help.sap.com/docs/btp/sap-business-technology-platform/sap-business-technology-platform)
 - [SAP Discovery Center](https://discovery-center.cloud.sap/) — Catalog of BTP services with pricing and roadmap
