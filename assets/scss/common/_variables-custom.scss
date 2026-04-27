@@ -1,0 +1,11 @@
+// Custom SCSS variables overriding Doks defaults
+// https://getdoks.org/docs/guides/customization/
+
+// Font family — Obsidian-like reading experience
+// Priority order:
+// 1. Inter (Obsidian's default font, web-loaded via @import in _custom.scss)
+// 2. macOS / iOS system font (-apple-system / BlinkMacSystemFont)
+// 3. Windows system font (Segoe UI)
+// 4. Japanese system fonts (Hiragino Sans, Yu Gothic, Noto Sans CJK JP)
+// 5. Generic fallbacks
+$font-family-sans-serif: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", "Hiragino Sans", "Yu Gothic", "Noto Sans CJK JP", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";

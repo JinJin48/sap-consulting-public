@@ -1,0 +1,59 @@
+// Custom SCSS overriding Doks defaults
+// https://getdoks.org/docs/guides/customization/
+
+// ------------------------------------------------------------
+// 1. Inter font (Obsidian-like reading experience)
+// ------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+// ------------------------------------------------------------
+// 2. TL;DR shortcode styling
+// ------------------------------------------------------------
+.tldr-box {
+  background: #E6F1FB;
+  border-left: 3px solid #185FA5;
+  border-radius: 0 8px 8px 0;
+  padding: 12px 16px;
+  margin: 16px 0;
+
+  .tldr-label {
+    font-size: 11px;
+    color: #0C447C;
+    font-weight: 500;
+    margin-bottom: 4px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }
+
+  .tldr-content {
+    font-size: 14px;
+    color: #1A2332;
+    line-height: 1.6;
+
+    ul {
+      margin: 0;
+      padding-left: 20px;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+// ------------------------------------------------------------
+// 3. Inline-styled tables (used for color-coded BTP layer tables)
+//
+// Doks/Bootstrap applies `--bs-table-bg` to <th>/<td>, which can
+// override our inline `background:` style. This rule lets inline
+// styles win without using !important on every cell.
+// ------------------------------------------------------------
+table[style*="border-collapse"] {
+  th[style*="background"],
+  td[style*="background"],
+  tr[style*="background"] > th,
+  tr[style*="background"] > td {
+    --bs-table-bg: transparent;
+    --bs-table-accent-bg: transparent;
+  }
+}
