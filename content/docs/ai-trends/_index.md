@@ -1,6 +1,6 @@
 ---
 title: "AI Trends"
-description: "SAP関連のAI最新トレンドをまとめるセクション。Business AI 全体像、Joule の適用領域、AI Agents 活用パターン、業界別 GenAI 事例。"
+description: "SAP関連のAI最新トレンド集。Business AI、Joule、AI Agents、業界別GenAI事例をカバー。"
 lead: "SAP関連のAI最新トレンドをまとめます"
 date: 2026-04-27T00:00:00+09:00
 lastmod: 2026-04-27T00:00:00+09:00

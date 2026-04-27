@@ -1,6 +1,6 @@
 ---
 title: "SAP BTP"
-description: "SAP Business Technology Platform に関する体系的なナレッジ集。BTP全体像、Integration、Build Apps、Data & Analytics、Business AI、Foundation Services を網羅。"
+description: "SAP BTPの体系的ナレッジ集。Integration、Build Apps、Data & Analytics、Business AI、Foundation Servicesを網羅。"
 lead: "BTP全体像から各サービス、設計・運用ナレッジ、ユースケースまでを54記事で体系化"
 date: 2026-04-27T00:00:00+09:00
 lastmod: 2026-04-27T00:00:00+09:00
