@@ -61,28 +61,26 @@ table[style*="border-collapse"] {
 // ------------------------------------------------------------
 // 4. Heading spacing (visual breathing room before each section)
 //
-// Add generous top margin to H2 and H3 headings inside article
-// content, so each new section feels visually distinct without
-// having to add manual blank lines or horizontal rules in Markdown.
-// Applies site-wide as the project standard.
+// Force generous top margin on H2/H3 in article body. Use a very
+// strong selector chain (body main h2) plus !important to win over
+// any theme/Bootstrap rule. This is intentionally heavy-handed —
+// when it works we'll dial back the specificity in a follow-up.
+//
+// Tuning round 3:
+//   - H2 (chapter level: 1, 2, ..., 11): 12rem feels right
+//   - H3 (sub level: 5-1, 5-2, ...): halved to 4rem so sub-sections
+//     stay visually tied to their parent chapter
 // ------------------------------------------------------------
-.docs main,
-article.docs,
-.content {
-  h2 {
-    margin-top: 3.5rem;
-  }
-  h3 {
-    margin-top: 2.5rem;
-  }
-  // First heading after the lead/cover image doesn't need extra space
-  h2:first-child,
-  h3:first-child {
-    margin-top: 1rem;
-  }
-  // Headings immediately after a horizontal rule already have visual
-  // separation, so reduce the duplicated spacing
-  hr + h2 {
-    margin-top: 2rem;
-  }
+body main h2 {
+  margin-top: 12rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+body main h3 {
+  margin-top: 4rem !important;
+  margin-bottom: 1.25rem !important;
+}
+
+body main hr + h2 {
+  margin-top: 5rem !important;
 }
