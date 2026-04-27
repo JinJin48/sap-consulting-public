@@ -1,0 +1,21 @@
+# Author profiles for article header/footer
+# Referenced from layouts/_partials/main/author-meta-top.html
+# and layouts/_partials/main/author-bio-bottom.html
+#
+# Each article's frontmatter `authors:` field looks up entries here by key.
+#
+# avatar: relative path (no leading /) so absLangURL prepends the full baseURL
+#         (including subpath like /sap-consulting-public/).
+
+JinJin48:
+  name: "JinJin48"
+  tagline: "SAP Consultant | BTP・S/4HANA・USグローバル展開支援"
+  avatar: "images/authors/jinjin48.jpg"
+  bio: >
+    SAP consultant helping Japanese enterprises roll out and operate
+    SAP across the US. Focused on BTP, S/4HANA, and bridging the gap
+    between Japan HQ standards and US local requirements.
+  links:
+    linkedin: "https://www.linkedin.com/in/jinjin48/"
+    github: "https://github.com/JinJin48"
+    email: "tatsuya198205@gmail.com"

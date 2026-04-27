@@ -1,0 +1,47 @@
+{{/*
+  author-bio-bottom.html
+  Article footer author card: avatar + name + tagline + bio + social links.
+  Renders only if .Params.authors exists and has a matching entry in data/authors.yaml.
+
+  Avatar can be either:
+    - External URL (starts with http) → used as-is
+    - Local path (starts with /)       → passed through absLangURL
+                                          (absLangURL keeps the baseURL subpath
+                                           and produces a full URL that bypasses <base href>)
+*/}}
+{{- with .Params.authors -}}
+  {{- $key := index . 0 -}}
+  {{- with index $.Site.Data.authors $key -}}
+    {{- $avatar := .avatar -}}
+    {{- if not (hasPrefix $avatar "http") -}}
+      {{- $avatar = absLangURL $avatar -}}
+    {{- end -}}
+    <aside class="author-bio-bottom mt-5 p-4 border rounded">
+      <div class="d-flex align-items-start">
+        <img
+          src="{{ $avatar }}"
+          alt="{{ .name }}"
+          class="author-bio-bottom-avatar rounded-circle me-3 flex-shrink-0"
+          width="72"
+          height="72"
+          loading="lazy">
+        <div class="author-bio-bottom-text flex-grow-1">
+          <div class="author-bio-bottom-name fw-bold fs-5">{{ .name }}</div>
+          <div class="author-bio-bottom-tagline text-muted small mb-2">{{ .tagline }}</div>
+          <p class="author-bio-bottom-bio mb-2">{{ .bio }}</p>
+          <div class="author-bio-bottom-links">
+            {{- with .links.linkedin }}
+              <a href="{{ . }}" target="_blank" rel="noopener" class="me-3">LinkedIn</a>
+            {{- end }}
+            {{- with .links.github }}
+              <a href="{{ . }}" target="_blank" rel="noopener" class="me-3">GitHub</a>
+            {{- end }}
+            {{- with .links.email }}
+              <a href="mailto:{{ . }}" class="me-3">Email</a>
+            {{- end }}
+          </div>
+        </div>
+      </div>
+    </aside>
+  {{- end -}}
+{{- end -}}

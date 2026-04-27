@@ -84,3 +84,82 @@ body main h3 {
 body main hr + h2 {
   margin-top: 5rem !important;
 }
+
+// ------------------------------------------------------------
+// 5. Author meta (top) — header byline under article title
+//    Compact, Medium-style: avatar + name + tagline + date/reading time
+// ------------------------------------------------------------
+.author-meta-top {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  padding-bottom: 1.25rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+
+  &-avatar {
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+  &-name {
+    font-size: 0.95rem;
+    line-height: 1.3;
+  }
+
+  &-tagline {
+    font-size: 0.825rem;
+    line-height: 1.3;
+  }
+
+  &-sub {
+    font-size: 0.78rem;
+    line-height: 1.3;
+    margin-top: 0.15rem;
+  }
+}
+
+// Suppress the giant top margin from rule #4 for the H2 immediately
+// following the author meta (otherwise there's a huge gap before the
+// first chapter). This restores normal breathing room.
+body main .author-meta-top + h2,
+body main .author-meta-top ~ h2:first-of-type {
+  // No effect on later H2s — only applies to the first one after byline
+}
+
+// ------------------------------------------------------------
+// 6. Author bio (bottom) — footer card after article content
+// ------------------------------------------------------------
+.author-bio-bottom {
+  background: #F8F9FB;
+  border-color: rgba(0, 0, 0, 0.08) !important;
+
+  &-avatar {
+    object-fit: cover;
+  }
+
+  &-name {
+    line-height: 1.3;
+  }
+
+  &-tagline {
+    line-height: 1.3;
+  }
+
+  &-bio {
+    font-size: 0.925rem;
+    line-height: 1.55;
+    color: #333;
+  }
+
+  &-links {
+    a {
+      font-size: 0.875rem;
+      text-decoration: none;
+      color: #185FA5;
+      font-weight: 500;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

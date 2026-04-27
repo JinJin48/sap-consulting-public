@@ -1,0 +1,40 @@
+{{/*
+  author-meta-top.html
+  Article header byline: avatar + name + tagline + date + reading time.
+  Renders only if .Params.authors exists and has a matching entry in data/authors.yaml.
+
+  Avatar can be either:
+    - External URL (starts with http) → used as-is
+    - Local path (starts with /)       → passed through absLangURL
+                                          (absLangURL keeps the baseURL subpath
+                                           and produces a full URL that bypasses <base href>)
+*/}}
+{{- with .Params.authors -}}
+  {{- $key := index . 0 -}}
+  {{- with index $.Site.Data.authors $key -}}
+    {{- $avatar := .avatar -}}
+    {{- if not (hasPrefix $avatar "http") -}}
+      {{- $avatar = absLangURL $avatar -}}
+    {{- end -}}
+    <div class="author-meta-top d-flex align-items-center my-3">
+      <img
+        src="{{ $avatar }}"
+        alt="{{ .name }}"
+        class="author-meta-top-avatar rounded-circle me-3"
+        width="48"
+        height="48"
+        loading="lazy">
+      <div class="author-meta-top-text">
+        <div class="author-meta-top-name fw-semibold">{{ .name }}</div>
+        <div class="author-meta-top-tagline text-muted small">{{ .tagline }}</div>
+        <div class="author-meta-top-sub text-muted small">
+          <time datetime="{{ $.Date.Format "2006-01-02" }}">
+            {{ $.Date.Format "January 2, 2006" }}
+          </time>
+          <span class="mx-1">·</span>
+          <span>{{ $.ReadingTime }} min read</span>
+        </div>
+      </div>
+    </div>
+  {{- end -}}
+{{- end -}}
