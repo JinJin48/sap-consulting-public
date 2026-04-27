@@ -1,0 +1,28 @@
+{
+  // Cloudflare Workers (Static Assets) configuration
+  // Docs: https://developers.cloudflare.com/workers/static-assets/
+  "name": "sap-consulting-public",
+  "compatibility_date": "2026-04-27",
+
+  // 静的アセット配信設定
+  "assets": {
+    "directory": "./public",
+    // Hugo の URL 構造に合わせる(末尾スラッシュあり)
+    "html_handling": "auto-trailing-slash",
+    // 404 時に Hugo の 404.html を返す
+    "not_found_handling": "404-page",
+    // Worker スクリプトを介さず直接静的配信(高速)
+    "run_worker_first": false
+  },
+
+  // *.workers.dev での動作確認を有効化
+  "workers_dev": true,
+
+  // PR ごとのプレビューURL を有効化
+  "preview_urls": true,
+
+  // ビルド設定 (Cloudflare ダッシュボードでも上書き可能)
+  "build": {
+    "command": "./build.sh"
+  }
+}

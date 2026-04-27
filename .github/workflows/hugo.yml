@@ -1,9 +1,15 @@
-name: Deploy Hugo site to Pages
+name: "[DISABLED] Deploy Hugo site to Pages"
+
+# Phase I-2 (2026-04-27) で Cloudflare Workers に移行したため無効化。
+# - GitHub Pages は当面残すが、自動デプロイは停止。
+# - 手動実行 (workflow_dispatch) のみ可能(緊急ロールバック用)。
+# - 完全削除は Cloudflare Workers での運用が安定してから実施予定。
 
 on:
-  push:
-    branches:
-      - main
+  # push トリガー無効化
+  # push:
+  #   branches:
+  #     - main
   workflow_dispatch:
 
 permissions:

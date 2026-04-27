@@ -1,6 +1,6 @@
 # Project-level Hugo config — overrides theme defaults in themes/doks/config/_default/
 title = "SAP Consulting Knowledge"
-baseURL = "https://jinjin48.github.io/sap-consulting-public/"
+baseURL = "https://sap.gugulii.com/"
 theme = "doks"
 
 languageCode = "ja"
