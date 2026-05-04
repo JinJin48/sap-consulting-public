@@ -34,6 +34,8 @@ Each section is tagged with **🎯 [Audience]**. Skip to what is relevant for yo
 
 ## 2) Where This Article Sits in the Big Picture
 
+![SAP BTP: A 7-Layer Blueprint for the Clean Core — Functional Pillars (App Dev & Automation, Integration & Data, Embedded AI), Strategic Foundation & Operations](images/00-cover-infographic.png)
+
 BTP can be organized in 7 layers. This article covers the **Big Picture (📍)**.
 
 The Domain column below is numbered to match the section structure of this article — when you see `5-1) Application Development`, that section drills into Layer 1.
@@ -49,8 +51,6 @@ The Domain column below is numbered to match the section structure of this artic
 | Cross-cutting | **Big Picture / Architecture & Ops / Use Cases** | Landscape / CI-CD / Security / Use Cases | 📍 |
 
 Each service is detailed in dedicated articles (see "What to Read Next" at the end).
-
-![SAP BTP: A 7-Layer Blueprint for the Clean Core — Functional Pillars (App Dev & Automation, Integration & Data, Embedded AI), Strategic Foundation & Operations](images/00-cover-infographic.png)
 
 ---
 
@@ -258,35 +258,7 @@ These misconceptions surface in real projects all the time. Each is addressed in
 
 ---
 
-## 8) About the Author
-
-**JinJin48** is an SAP consultant based in Thailand, specializing in S/4HANA transformations and SAP BTP architecture. This site publishes practical SAP knowledge distilled from real-world implementation experience.
-
-- X: [@48jinjin](https://x.com/48jinjin)
-- Site: [sap.gugulii.com](https://sap.gugulii.com/)
-
----
-
-## 9) What to Read Next
-
-![The Knowledge Architecture: Where to Dive Deeper — from L1 Big Picture (you are here) to L2-A Integration, L2-B App Dev & Automation, L2-C Data & Analytics, L2-D Business AI, L2-E/F Foundation & Operations](images/15-knowledge-architecture-l2.png)
-
-
-This site organizes BTP knowledge into the following structure:
-
-| L1. Big Picture | L2. Functional Domains |
-|---|---|
-| **BTP-001 What is BTP** (this article) | L2-A. Integration |
-| BTP-002 BTP Architecture | L2-B. Application Development & Automation |
-| BTP-003 BTP Capability Map | L2-C. Data & Analytics |
-| BTP-004 Deployment Models | L2-D. AI |
-| BTP-005 Licensing Models | L2-E. Foundation Services |
-| BTP-006 Clean Core Strategy | L2-F. Architecture & Operations |
-|  | L2-G. Use Cases & Patterns |
-
----
-
-## 10) Summary
+## 8) Summary
 
 - **BTP is SAP's unified cloud platform for extending, integrating, analyzing, automating, and adding AI to SAP products.**
 - The structure is **five functional pillars (App Dev, Automation, Integration, Data & Analytics, AI) plus Foundation Services and Architecture & Operations knowledge** — seven layers in total.
@@ -297,7 +269,7 @@ Each service is detailed in the L2-A through L2-G series.
 
 ---
 
-## 11) FAQ
+## 9) FAQ
 
 ![Ecosystem Positioning: SAP vs. Hyperscalers — Venn diagram showing SAP BTP (SAP business context, pre-built integrations) and Hyperscalers (general-purpose compute, raw infrastructure) as partly competing, mostly complementary](images/14-ecosystem-positioning-hyperscalers.png)
 
@@ -319,10 +291,28 @@ A: The official [SAP Learning](https://learning.sap.com/learning-journeys/discov
 
 ---
 
-## 12) References
+## 10) References
 
 - [SAP Help Portal: SAP Business Technology Platform](https://help.sap.com/docs/btp/sap-business-technology-platform/sap-business-technology-platform)
 - [SAP Discovery Center](https://discovery-center.cloud.sap/) — Catalog of BTP services with pricing and roadmap
 - [SAP Best Practices for S/4HANA](https://help.sap.com/docs/s4hana-best-practices/)
 - [Explaining SAP BTP to a Beginner — SAP Community](https://community.sap.com/t5/technology-blog-posts-by-sap/explaining-sap-business-technology-platform-sap-btp-to-a-beginner-2025/ba-p/13557182)
+
+---
+
+## 11) What to Read Next
+
+![The Knowledge Architecture: Where to Dive Deeper — from L1 Big Picture (you are here) to L2-A Integration, L2-B App Dev & Automation, L2-C Data & Analytics, L2-D Business AI, L2-E/F Foundation & Operations](images/15-knowledge-architecture-l2.png)
+
+This site organizes BTP knowledge into the following structure:
+
+| L1. Big Picture | L2. Functional Domains |
+|---|---|
+| **BTP-001 What is BTP** (this article) | L2-A. Integration |
+| BTP-002 BTP Architecture | L2-B. Application Development & Automation |
+| BTP-003 BTP Capability Map | L2-C. Data & Analytics |
+| BTP-004 Deployment Models | L2-D. AI |
+| BTP-005 Licensing Models | L2-E. Foundation Services |
+| BTP-006 Clean Core Strategy | L2-F. Architecture & Operations |
+|  | L2-G. Use Cases & Patterns |
 
