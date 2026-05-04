@@ -11,19 +11,18 @@ tags:
   - Overview
 authors:
   - JinJin48
-images: ["images/00-cover-infographic.png"]
 toc: true
 type: "docs"
 ---
+
+![SAP BTP: A 7-Layer Blueprint for the Clean Core — Functional Pillars (App Dev & Automation, Integration & Data, Embedded AI), Strategic Foundation & Operations](images/00-cover-infographic.png)
+
 
 {{< tldr >}}
 - SAP BTP is the unified cloud platform for extending, integrating, analyzing, automating, and adding AI to SAP products like S/4HANA.
 - The core consists of five functional pillars (App Dev, Automation, Integration, Data & Analytics, AI) plus shared foundation and operational knowledge.
 - The right question is not "Should we adopt BTP?" but "Which BTP service, for which responsibility?"
 {{< /tldr >}}
-
-![SAP BTP: A 7-Layer Blueprint for the Clean Core — Functional Pillars (App Dev & Automation, Integration & Data, Embedded AI), Strategic Foundation & Operations](images/00-cover-infographic.png)
-
 ## 1) Target Readers
 
 | Reader | What You Will Get |
@@ -58,6 +57,9 @@ Each service is detailed in dedicated articles (see "What to Read Next" at the e
 
 ## 3) What is SAP BTP?
 
+![The Unified Foundation for the Cloud Era — BTP's five functional pillars (Extending, Automating, Integrating, Analyzing, Adding AI) connecting to SAP Products like S/4HANA](images/02-unified-foundation-cloud-era.png)
+
+
 🎯 **For: All readers**
 
 SAP Business Technology Platform (BTP) is SAP's **unified cloud-based technology platform**.
@@ -73,12 +75,12 @@ In one sentence: it is **the foundation for extending, integrating, analyzing, a
 
 > ⚠️ **A common misconception**
 > "Should we adopt BTP?" is the wrong question. BTP is an umbrella for many services. The right question is: "Which BTP service, for which purpose?"
-
-![The Unified Foundation for the Cloud Era — BTP's five functional pillars (Extending, Automating, Integrating, Analyzing, Adding AI) connecting to SAP Products like S/4HANA](images/02-unified-foundation-cloud-era.png)
-
 ---
 
 ## 4) Why BTP Matters Now: The Clean Core Strategy
+
+![The Clean Core Imperative Drives BTP Adoption — Traditional SAP (tangled customizations) vs. The Clean Core (Standard S/4HANA surrounded by isolated BTP Extensions)](images/03-clean-core-imperative.png)
+
 
 🎯 **For: Executives & DX Leaders**
 
@@ -91,22 +93,22 @@ SAP has been pushing the **Clean Core** strategy hard in recent years. This is t
 | Customizations turn into technical debt | Extensions are isolated and easier to maintain |
 
 S/4HANA's release cycle is shorter than the legacy ERP's, making **"how to meet business requirements without modifying the core"** a board-level concern. BTP is the answer SAP provides.
-
-![The Clean Core Imperative Drives BTP Adoption — Traditional SAP (tangled customizations) vs. The Clean Core (Standard S/4HANA surrounded by isolated BTP Extensions)](images/03-clean-core-imperative.png)
-
 > 📖 **Learn more**: [Clean Core Extensibility — SAP Help Portal](https://help.sap.com/docs/btp/btp-developers-guide/clean-core-extensibility)
 
 ---
 
 ## 5) The 7 Layers of SAP BTP
 
+![The Master Capability Map: 7 Layers of Architecture — Functional Pillars (1-5), Foundation (6), and Cross-Cutting Architecture & Operations (7)](images/04-master-capability-map-7-layers.png)
+
+
 🎯 **For: IT Leads & Consultants**
 
 Aligned with SAP Help Portal, BTP can be understood through these 7 layers. Layers 1 to 5 are SAP's official "five pillars"; layers 6 and 7 are essential surrounding domains in actual practice.
-
-![The Master Capability Map: 7 Layers of Architecture — Functional Pillars (1-5), Foundation (6), and Cross-Cutting Architecture & Operations (7)](images/04-master-capability-map-7-layers.png)
-
 ### 5-1) Application Development
+
+![Layer 1: Application Development Spectrum — from Low-Code/No-Code (Build Apps) to Pro-Code (BAS) to Runtimes (Cloud Foundry, Kyma, ABAP), unified by DevOps](images/05-layer1-app-development-spectrum.png)
+
 
 The domain for building SAP and custom applications.
 
@@ -118,10 +120,10 @@ The domain for building SAP and custom applications.
 | DevOps | Continuous Integration / Cloud Transport Mgmt | CI/CD and transport management |
 
 > 📖 **Learn more**: [Application Development — SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/development)
-
-![Layer 1: Application Development Spectrum — from Low-Code/No-Code (Build Apps) to Pro-Code (BAS) to Runtimes (Cloud Foundry, Kyma, ABAP), unified by DevOps](images/05-layer1-app-development-spectrum.png)
-
 ### 5-2) Automation
+
+![Layer 2: Automating the Human Loop — from manual bottlenecks (data entry, email approvals, disconnected systems) to an automated pipeline via SAP Build Process Automation and SAP Task Center](images/06-layer2-automating-human-loop.png)
+
 
 The domain for automating business processes.
 
@@ -131,10 +133,10 @@ The domain for automating business processes.
 | SAP Task Center | Unified inbox for approval tasks across SAP products |
 
 > 📖 **Learn more**: [SAP Build Process Automation — SAP Help Portal](https://help.sap.com/docs/build-process-automation)
-
-![Layer 2: Automating the Human Loop — from manual bottlenecks (data entry, email approvals, disconnected systems) to an automated pipeline via SAP Build Process Automation and SAP Task Center](images/06-layer2-automating-human-loop.png)
-
 ### 5-3) Integration
+
+![Layer 3: The Central Nervous System for Integration — SAP Integration Suite connecting SAP Systems, Third-Party SaaS, and On-Premise Legacy Apps with 3,400+ pre-built iFlows](images/07-layer3-central-nervous-system.png)
+
 
 The domain for connecting SAP and external systems (SaaS, on-premise, custom apps).
 
@@ -146,10 +148,10 @@ The domain for connecting SAP and external systems (SaaS, on-premise, custom app
 The Integration Suite ships with over 3,400 pre-built iFlows and 170+ third-party connectors, removing the need to build integrations from scratch.
 
 > 📖 **Learn more**: [Integration Suite — SAP Help Portal](https://help.sap.com/docs/integration-suite)
-
-![Layer 3: The Central Nervous System for Integration — SAP Integration Suite connecting SAP Systems, Third-Party SaaS, and On-Premise Legacy Apps with 3,400+ pre-built iFlows](images/07-layer3-central-nervous-system.png)
-
 ### 5-4) Data and Analytics
+
+![Layer 4: Distilling Raw Data into Business Intelligence — the data refinery from HANA Cloud (input) through Datasphere (filter), governed by MDG (valve), into SAP Analytics Cloud (output)](images/08-layer4-distilling-data.png)
+
 
 The domain for data management, analytics, and planning.
 
@@ -161,10 +163,10 @@ The domain for data management, analytics, and planning.
 | SAP Master Data Governance | Master data management |
 
 > 📖 **Learn more**: [Data and Analytics — SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/data-and-analytics)
-
-![Layer 4: Distilling Raw Data into Business Intelligence — the data refinery from HANA Cloud (input) through Datasphere (filter), governed by MDG (valve), into SAP Analytics Cloud (output)](images/08-layer4-distilling-data.png)
-
 ### 5-5) AI
+
+![Layer 5: Embedding AI into the Business Process — Joule (the embedded AI assistant) sits on top of SAP AI Core & Launchpad and the Generative AI Hub (GPT, Claude, Gemini)](images/09-layer5-embedding-ai.png)
+
 
 The domain for embedding AI into SAP business processes.
 
@@ -178,10 +180,10 @@ The domain for embedding AI into SAP business processes.
 As of 2026, Joule is integrated into S/4HANA, SuccessFactors, Ariba, and other major SAP products, enabling conversational interactions with business processes.
 
 > 📖 **Learn more**: [Business AI — SAP Help Portal](https://help.sap.com/docs/sap-ai-core)
-
-![Layer 5: Embedding AI into the Business Process — Joule (the embedded AI assistant) sits on top of SAP AI Core & Launchpad and the Generative AI Hub (GPT, Claude, Gemini)](images/09-layer5-embedding-ai.png)
-
 ### 5-6) Foundation Services
+
+![Layer 6: The Security and Infrastructure Bedrock — Zone 1: Identity & Access (IAS, IPS, XSUAA, Audit Log) and Zone 2: Connectivity & Ops (Cloud Connector, Cloud ALM)](images/10-layer6-security-bedrock.png)
+
 
 🎯 **For: Infrastructure & Security Teams**
 
@@ -197,10 +199,10 @@ The shared foundation supporting layers 1 through 5.
 | Audit Log | Audit logging |
 
 > 📖 **Learn more**: [Security — SAP Help Portal](https://help.sap.com/docs/btp/sap-business-technology-platform/security)
-
-![Layer 6: The Security and Infrastructure Bedrock — Zone 1: Identity & Access (IAS, IPS, XSUAA, Audit Log) and Zone 2: Connectivity & Ops (Cloud Connector, Cloud ALM)](images/10-layer6-security-bedrock.png)
-
 ### 5-7) Architecture & Operations Knowledge
+
+![Layer 7: Architecture and Operational Governance — The Blueprint Checklist: Landscape Design, Role Collection Design, Naming Conventions, CI/CD Strategy, Monitoring Strategy](images/11-layer7-architecture-governance.png)
+
 
 🎯 **For: Architects & Operations Teams**
 
@@ -215,12 +217,12 @@ The know-how needed to combine the above services into a working solution.
 | Monitoring Strategy | Monitoring and alerting design |
 
 These are scattered across SAP's official documentation, which is why this site organizes them as a dedicated series.
-
-![Layer 7: Architecture and Operational Governance — The Blueprint Checklist: Landscape Design, Role Collection Design, Naming Conventions, CI/CD Strategy, Monitoring Strategy](images/11-layer7-architecture-governance.png)
-
 ---
 
 ## 6) Licensing Models and Getting Started
+
+![Procurement Strategy: The BTP Licensing Matrix — BTPEA (default), CPEA (predictable rollouts), Subscription (targeted use), and Pay-As-You-Go (PoCs & evaluation)](images/12-licensing-matrix.png)
+
 
 🎯 **For: Executives & Procurement**
 
@@ -236,12 +238,12 @@ BTP offers several contract models. The right one depends on **when, who, and ho
 > 💡 **Want to try BTP for free?**
 > [SAP BTP Free Tier](https://www.sap.com/products/technology-platform/trial.html) gives you free access to selected services.
 > [SAP BTP Trial](https://account.hanatrial.ondemand.com/) offers a time-limited evaluation environment.
-
-![Procurement Strategy: The BTP Licensing Matrix — BTPEA (default), CPEA (predictable rollouts), Subscription (targeted use), and Pay-As-You-Go (PoCs & evaluation)](images/12-licensing-matrix.png)
-
 ---
 
 ## 7) Common Misconceptions
+
+![Flipping the Script: Common BTP Misconceptions — three myths (BTP equals Clean Core / BTP is just middleware / BTP licenses are too expensive) versus the realities](images/13-misconceptions-myths-realities.png)
+
 
 🎯 **For: All readers**
 
@@ -253,17 +255,14 @@ BTP offers several contract models. The right one depends on **when, who, and ho
 | "BTP licenses are too expensive" | Pricing varies per service. Cost discussions without a usage scenario are not actionable. |
 
 These misconceptions surface in real projects all the time. Each is addressed in dedicated articles in this series.
-
-![Flipping the Script: Common BTP Misconceptions — three myths (BTP equals Clean Core / BTP is just middleware / BTP licenses are too expensive) versus the realities](images/13-misconceptions-myths-realities.png)
-
 ---
 
 ## 8) What to Read Next
 
-This site organizes BTP knowledge into the following structure:
-
 ![The Knowledge Architecture: Where to Dive Deeper — from L1 Big Picture (you are here) to L2-A Integration, L2-B App Dev & Automation, L2-C Data & Analytics, L2-D Business AI, L2-E/F Foundation & Operations](images/15-knowledge-architecture-l2.png)
 
+
+This site organizes BTP knowledge into the following structure:
 | L1. Big Picture | L2. Functional Domains |
 |---|---|
 | **BTP-001 What is BTP** (this article) | L2-A. Integration |
@@ -289,6 +288,9 @@ Each service is detailed in the L2-A through L2-G series.
 
 ## 10) FAQ
 
+![Ecosystem Positioning: SAP vs. Hyperscalers — Venn diagram showing SAP BTP (SAP business context, pre-built integrations) and Hyperscalers (general-purpose compute, raw infrastructure) as partly competing, mostly complementary](images/14-ecosystem-positioning-hyperscalers.png)
+
+
 ### Q1. Can companies without S/4HANA still use BTP?
 
 A: Yes. BTP integrates with non-SAP systems and works as a standalone application platform. That said, its value peaks when extending SAP products.
@@ -296,9 +298,6 @@ A: Yes. BTP integrates with non-SAP systems and works as a standalone applicatio
 ### Q2. Does BTP compete with AWS, Azure, or GCP?
 
 A: Partly competing, partly complementary. BTP itself runs on AWS, Azure, or GCP. The practical separation is "SAP business context belongs on BTP; general-purpose data and AI infrastructure belongs on hyperscalers."
-
-![Ecosystem Positioning: SAP vs. Hyperscalers — Venn diagram showing SAP BTP (SAP business context, pre-built integrations) and Hyperscalers (general-purpose compute, raw infrastructure) as partly competing, mostly complementary](images/14-ecosystem-positioning-hyperscalers.png)
-
 ### Q3. Is there a free way to try BTP?
 
 A: Yes. The Free Tier provides free access to selected services, and the Trial gives a time-limited evaluation environment.
