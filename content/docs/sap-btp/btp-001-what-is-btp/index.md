@@ -6,6 +6,7 @@ date: 2026-04-27T10:00:00+09:00
 lastmod: 2026-04-27T10:00:00+09:00
 draft: false
 weight: 1
+slug: btp-001-what-is-btp
 tags:
   - BTP
   - Overview
@@ -20,6 +21,7 @@ type: "docs"
 - The core consists of five functional pillars (App Dev, Automation, Integration, Data & Analytics, AI) plus shared foundation and operational knowledge.
 - The right question is not "Should we adopt BTP?" but "Which BTP service, for which responsibility?"
 {{< /tldr >}}
+
 ## 1) Target Readers
 
 | Reader | What You Will Get |
