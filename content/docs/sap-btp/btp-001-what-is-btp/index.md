@@ -215,7 +215,7 @@ The know-how needed to combine the above services into a working solution.
 | CI/CD Strategy | Transport and deployment strategy |
 | Monitoring Strategy | Monitoring and alerting design |
 
-> These are scattered across SAP's official documentation, which is why this site organizes them as a dedicated series.
+These are scattered across SAP's official documentation, which is why this site organizes them as a dedicated series.
 
 ---
 
@@ -254,11 +254,39 @@ BTP offers several contract models. The right one depends on **when, who, and ho
 | "Should we adopt BTP?" | The unit of debate is too large. Reframe as: "Which service, for which purpose?" |
 | "BTP licenses are too expensive" | Pricing varies per service. Cost discussions without a usage scenario are not actionable. |
 
-> These misconceptions surface in real projects all the time. Each is addressed in dedicated articles in this series.
+These misconceptions surface in real projects all the time. Each is addressed in dedicated articles in this series.
 
 ---
 
-## 8) Summary
+## 8) About the Author
+
+**JinJin48** is an SAP consultant based in Thailand, specializing in S/4HANA transformations and SAP BTP architecture. This site publishes practical SAP knowledge distilled from real-world implementation experience.
+
+- X: [@48jinjin](https://x.com/48jinjin)
+- Site: [sap.gugulii.com](https://sap.gugulii.com/)
+
+---
+
+## 9) What to Read Next
+
+![The Knowledge Architecture: Where to Dive Deeper — from L1 Big Picture (you are here) to L2-A Integration, L2-B App Dev & Automation, L2-C Data & Analytics, L2-D Business AI, L2-E/F Foundation & Operations](images/15-knowledge-architecture-l2.png)
+
+
+This site organizes BTP knowledge into the following structure:
+
+| L1. Big Picture | L2. Functional Domains |
+|---|---|
+| **BTP-001 What is BTP** (this article) | L2-A. Integration |
+| BTP-002 BTP Architecture | L2-B. Application Development & Automation |
+| BTP-003 BTP Capability Map | L2-C. Data & Analytics |
+| BTP-004 Deployment Models | L2-D. AI |
+| BTP-005 Licensing Models | L2-E. Foundation Services |
+| BTP-006 Clean Core Strategy | L2-F. Architecture & Operations |
+|  | L2-G. Use Cases & Patterns |
+
+---
+
+## 10) Summary
 
 - **BTP is SAP's unified cloud platform for extending, integrating, analyzing, automating, and adding AI to SAP products.**
 - The structure is **five functional pillars (App Dev, Automation, Integration, Data & Analytics, AI) plus Foundation Services and Architecture & Operations knowledge** — seven layers in total.
@@ -269,7 +297,7 @@ Each service is detailed in the L2-A through L2-G series.
 
 ---
 
-## 9) FAQ
+## 11) FAQ
 
 ![Ecosystem Positioning: SAP vs. Hyperscalers — Venn diagram showing SAP BTP (SAP business context, pre-built integrations) and Hyperscalers (general-purpose compute, raw infrastructure) as partly competing, mostly complementary](images/14-ecosystem-positioning-hyperscalers.png)
 
@@ -291,28 +319,10 @@ A: The official [SAP Learning](https://learning.sap.com/learning-journeys/discov
 
 ---
 
-## 9) References
+## 12) References
 
 - [SAP Help Portal: SAP Business Technology Platform](https://help.sap.com/docs/btp/sap-business-technology-platform/sap-business-technology-platform)
 - [SAP Discovery Center](https://discovery-center.cloud.sap/) — Catalog of BTP services with pricing and roadmap
 - [SAP Best Practices for S/4HANA](https://help.sap.com/docs/s4hana-best-practices/)
 - [Explaining SAP BTP to a Beginner — SAP Community](https://community.sap.com/t5/technology-blog-posts-by-sap/explaining-sap-business-technology-platform-sap-btp-to-a-beginner-2025/ba-p/13557182)
 
----
-
-## 10) What to Read Next
-
-![The Knowledge Architecture: Where to Dive Deeper — from L1 Big Picture (you are here) to L2-A Integration, L2-B App Dev & Automation, L2-C Data & Analytics, L2-D Business AI, L2-E/F Foundation & Operations](images/15-knowledge-architecture-l2.png)
-
-
-This site organizes BTP knowledge into the following structure:
-
-| L1. Big Picture | L2. Functional Domains |
-|---|---|
-| **BTP-001 What is BTP** (this article) | L2-A. Integration |
-| BTP-002 BTP Architecture | L2-B. Application Development & Automation |
-| BTP-003 BTP Capability Map | L2-C. Data & Analytics |
-| BTP-004 Deployment Models | L2-D. AI |
-| BTP-005 Licensing Models | L2-E. Foundation Services |
-| BTP-006 Clean Core Strategy | L2-F. Architecture & Operations |
-|  | L2-G. Use Cases & Patterns |
